@@ -1,0 +1,15 @@
+  <div class="card">
+    <h5 class="card-header" style="text-align: center;" >Registered Users</h5>
+  </div>
+  <br/>
+  <div class="card-columns">
+    <div class="card"  *ngFor="let user of authUsers">
+        <div class="card-body">
+          <h5 class="card-title">{{user.name}}</h5>
+          <p class="card-text"> Awesome User</p>
+          <a href="#" >Profile</a>
+        </div>
+    </div>
+  </div>
+  <a routerLink='/admin/addUser' class="btn btn-primary">Add User</a>
+  

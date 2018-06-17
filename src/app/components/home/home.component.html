@@ -1,0 +1,13 @@
+
+<div class="container">
+  <ngb-alert type="success" [dismissible]="false">
+    Welcome Home <i class="fa fa-home" style="color: red; font: size 10em;" aria-hidden="true"></i> 
+  </ngb-alert>   
+  
+  <ul class="list-group" *ngFor="let srvc of ourServices ; index as i;odd as isOdd">
+    <li class="list-group-item" [class.evenRow]="isOdd" >
+      <a routerLink="{{srvc.path}}">{{srvc.name}}</a>
+
+    </li>
+  </ul>
+</div>

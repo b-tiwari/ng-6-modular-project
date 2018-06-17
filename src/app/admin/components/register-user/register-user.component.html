@@ -1,0 +1,18 @@
+<form [formGroup]="checkboxGroupForm">
+    <div class="form-group">
+        <label for="firstName">User Name</label>
+        <input type="text" class="form-control" id="firstName" aria-describedby="nameHelp" placeholder="Enter first name">
+        <small id="nameHelp" class="form-text text-muted">Enter user's first name.</small>
+    </div>
+  <div class="btn-group btn-group-toggle">
+    <label class="btn-primary" ngbButtonLabel>
+      <input type="checkbox" formControlName="left" ngbButton> Left (pre-checked)
+    </label>
+    <label class="btn-primary" ngbButtonLabel>
+      <input type="checkbox" formControlName="middle" ngbButton> Middle
+    </label>
+    <label class="btn-primary" ngbButtonLabel>
+      <input type="checkbox" formControlName="right" ngbButton> Right
+    </label>
+  </div>
+</form>
